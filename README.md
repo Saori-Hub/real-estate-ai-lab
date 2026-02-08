@@ -15,3 +15,6 @@ Python / Pandas / Matplotlib / scikit-learn
 
 ## Result
 Basic price prediction model successfully implemented and pushed to GitHub.
+
+## Author
+Built by Saori – Learning AI & Data Science from real estate domain.
