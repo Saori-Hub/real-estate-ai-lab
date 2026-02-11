@@ -64,13 +64,19 @@ This project evolves step by step as new models and analytical methods are teste
 - Area: Suginami Ward, Tokyo (initial dataset)
 
 Raw data is not included in this repository.  
-Please download it from the official MLIT website and place it under:```data/raw/```
-
-Then run:```python src/prepare_data.py```
+Please download it from the official MLIT website and place it under:
+```
+data/raw/
+```
+Then run:
+```
+python src/prepare_data.py
+```
 
 ---
 
 ## Project Structure
+```
 real-estate-ai-lab/
 ├ data/
 │ ├ raw/
@@ -78,6 +84,7 @@ real-estate-ai-lab/
 ├ notebooks/
 ├ src/
 └ README.md
+```
 
 ---
 
