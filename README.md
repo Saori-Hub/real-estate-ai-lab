@@ -101,15 +101,18 @@ real-estate-ai-lab/
 ## Model Performance
 
 Using Suginami Ward transaction data:
-Model: Linear Regression (log-transformed price)
-Features: area_sqm, station_minutes, building_age
-R² (log scale): 0.81
-MAE: ~12.8 million JPY
-MAPE: ~25%
-A missing value strategy evaluation was conducted:
-Two-step median imputation (by station → global median)
-Missing flag modeling tested
-Missingness was found to have negligible predictive power
+
+- Model: Linear Regression (log-transformed price)
+- Features: area_sqm, station_minutes, building_age
+- R² (log scale): 0.81
+- MAE: ~12.8 million JPY
+- MAPE: ~25%
+
+### Missing Value Strategy
+
+- Two-step median imputation (by station → global median)
+- Missing flag modeling tested
+- Missingness was found to have negligible predictive power
 
 ---
 
@@ -175,18 +178,22 @@ Real Estate AI Lab は、不動産実務の専門性とデータサイエンス�
 ## モデル性能
 
 杉並区の不動産取引データを用いた基礎モデルの結果は以下の通りです。
-モデル：線形回帰（価格を対数変換）
-使用特徴量：area_sqm（面積）、station_minutes（駅徒歩分数）、building_age（築年数）
-R²（対数スケール）：0.81
-MAE（平均絶対誤差）：約1,280万円
-MAPE（平均絶対誤差率）：約25%
 
-# 欠損値処理の検証
-欠損値については以下の検証を実施しました。
-駅別中央値 → 全体中央値の2段階補完
-欠損フラグを加えたモデルも比較
-検証の結果、欠損そのものは価格予測に対して大きな情報性を持たないことが確認されました。
-そのため、本データセットでは2段階中央値補完を採用しています。
+- モデル：線形回帰（価格を対数変換）
+- 使用特徴量：area_sqm（面積）、station_minutes（駅徒歩分数）、building_age（築年数）
+- R²（対数スケール）：0.81
+- MAE（平均絶対誤差）：約1,280万円
+- MAPE（平均絶対誤差率）：約25%
+
+### 欠損値処理の検証
+
+- 駅別中央値 → 全体中央値の2段階補完を実施
+- 欠損フラグを加えたモデルも比較
+- 欠損そのものは価格予測に対して有意な情報を持たないことを確認
+
+本データセットでは、2段階中央値補完を採用しています。
+
+---
 
 ## 本プロジェクトの位置づけ
 
