@@ -114,6 +114,17 @@ Using Suginami Ward transaction data:
 - Missing flag modeling tested
 - Missingness was found to have negligible predictive power
 
+### Text Cleaning (YouTube Transcript Preprocessing)
+
+Remove timestamps like `1:23`, `12:34` from transcript data.
+
+#### Script
+`scripts/clean_timestamp.py`
+
+#### Usage
+```bash
+python scripts/clean_timestamp.py data/raw/input.txt data/processed/output.txt
+
 ---
 
 # 不動産AIラボ
